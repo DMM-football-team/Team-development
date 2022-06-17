@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  devise_for :admins
   devise_for :customers
   devise_for :users
 
@@ -23,36 +22,21 @@ Rails.application.routes.draw do
     resources :items, only: [:index, :show]
     resources :customers, expect: [:new, :create, :destroy, :index]
 
+  devise_for :admins
   namespace :admin do
-    get 'admin/order_details/update'
-  end
-  namespace :admin do
-    get 'admin/orders/index'
-    get 'admin/orders/show'
-    get 'admin/orders/update'
-  end
-  namespace :admin do
-    get 'admin/genres/index'
-    get 'admin/genres/create'
-    get 'admin/genres/edit'
-    get 'admin/genres/update'
-  end
-  namespace :admin do
-    get 'admin/items/new'
-    get 'admin/items/index'
-    get 'admin/items/show'
-    get 'admin/items/create'
-    get 'admin/items/edit'
-    get 'admin/items/update'
-  end
-  namespace :admin do
-    get 'admin/homes/top'
-  end
-  namespace :admin do
-    get 'admin/customers/index'
-    get 'admin/customers/show'
-    get 'admin/customers/edit'
-    get 'admin/customers/update'
+    resources :customers,only: [:index,:show,:edit,:update]
+  	resources :items,only: [:index,:new,:create,:show,:edit,:update,]
+  	get 'top'=>'items#top'
+  	resources :genres,only: [:index,:create,:edit,:update, :show]
+  	resources :orders,only: [:index,:show,:update] do
+  	  member do
+        get :current_index
+        resource :order_details,only: [:update]
+      end
+      collection do
+        get :today_order_index
+      end
+    end
   end
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
