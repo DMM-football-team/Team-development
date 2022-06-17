@@ -1,11 +1,11 @@
-class ShippingAddressController < ApplicationController
+class ShippingAddressesController < ApplicationController
   def index
   end
 
   def create
   end
 
-  def destoy
+  def destroy
   end
 
   def edit
