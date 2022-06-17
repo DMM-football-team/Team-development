@@ -1,8 +1,25 @@
 Rails.application.routes.draw do
+
   devise_for :admins
   devise_for :customers
+
   devise_for :users
-  
+
+  root to: "homes#top"
+  get "home/about" => "homes#about"
+
+   resources :customers, expect: [:new, :create, :destroy, :index] do
+      resources :orders, expect: [:destroy, :update, :edit] do
+        resources :order_details, only: [:new]
+   end
+      resources :cart_items, expect: [:new, :show, :edit]
+      resources :shipping_addresses, expect: [:new, :show]
+   end
+    resources :order_details, only: [:new]
+    resources :items, only: [:index, :show]
+    resources :customers, expect: [:new, :create, :destroy, :index]
+
+
   get 'shipping_addresses/index'
   get 'shipping_addresses/create'
   get 'shipping_addresses/destroy'
@@ -27,8 +44,7 @@ Rails.application.routes.draw do
   get 'customers/out'
   get 'customers/edit'
   get 'customers/update'
-  get 'homes/top'
-  get 'homes/about'
+
 
   namespace :admin do
     get 'admin/order_details/update'
