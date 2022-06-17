@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
+  
   get 'shipping_address/index'
   get 'shipping_address/create'
   get 'shipping_address/destoy'
