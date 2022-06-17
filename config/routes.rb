@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admins
+  devise_for :customers
   devise_for :users
   
   get 'shipping_addresses/index'
