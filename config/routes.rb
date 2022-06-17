@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
+  
   get 'shipping_addresses/index'
   get 'shipping_addresses/create'
   get 'shipping_addresses/destroy'
   get 'shipping_addresses/edit'
   get 'shipping_addresses/update'
+
   get 'orders/new'
   get 'orders/log'
   get 'orders/create'
