@@ -6,11 +6,6 @@ Rails.application.routes.draw do
 
   root to: "homes#top"
   get "home/about" => "homes#about"
-  get 'orders/log'
-  get 'orders/complete'
-  get 'cart_items/all_destroy'
-  get 'customers/quit'
-  get 'customers/out'
 
    resources :customers, expect: [:new, :create, :destroy, :index] do
       resources :orders, expect: [:destroy, :update, :edit] do
@@ -22,6 +17,7 @@ Rails.application.routes.draw do
     resources :order_details, only: [:new]
     resources :items, only: [:index, :show]
     resources :customers, expect: [:new, :create, :destroy, :index]
+
 
   namespace :admin do
     get 'admin/order_details/update'
