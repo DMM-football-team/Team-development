@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   devise_for :admins
   devise_for :customers
-
   devise_for :users
 
   root to: "homes#top"
@@ -18,32 +17,6 @@ Rails.application.routes.draw do
     resources :order_details, only: [:new]
     resources :items, only: [:index, :show]
     resources :customers, expect: [:new, :create, :destroy, :index]
-
-
-  get 'shipping_addresses/index'
-  get 'shipping_addresses/create'
-  get 'shipping_addresses/destroy'
-  get 'shipping_addresses/edit'
-  get 'shipping_addresses/update'
-
-  get 'orders/new'
-  get 'orders/log'
-  get 'orders/create'
-  get 'orders/complete'
-  get 'orders/index'
-  get 'orders/show'
-  get 'cart_items/index'
-  get 'cart_items/update'
-  get 'cart_items/create'
-  get 'cart_items/destroy'
-  get 'cart_items/all_destroy'
-  get 'items/index'
-  get 'items/show'
-  get 'customers/show'
-  get 'customers/quit'
-  get 'customers/out'
-  get 'customers/edit'
-  get 'customers/update'
 
 
   namespace :admin do
