@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-  devise_for :customers
-  devise_for :users
+  devise_for :users, controllers: {
+  sessions:      'customers/sessions',
+  passwords:     'customers/passwords',
+  registrations: 'customers/registrations'
+  }
 
   root to: "homes#top"
   get "home/about" => "homes#about"
@@ -22,7 +25,12 @@ Rails.application.routes.draw do
     resources :items, only: [:index, :show]
     resources :customers, expect: [:new, :create, :destroy, :index]
 
-  devise_for :admins
+  devise_for :admins, controllers: {
+  sessions:      'admins/sessions',
+  passwords:     'admins/passwords',
+  registrations: 'admins/registrations'
+  }
+
   namespace :admin do
     resources :customers,only: [:index,:show,:edit,:update]
   	resources :items,only: [:index,:new,:create,:show,:edit,:update,]
