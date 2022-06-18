@@ -12,6 +12,7 @@ class Admin::OrdersController < ApplicationController
     now = Time.current
     @orders = Order.where(created_at: now.all_day).page(params[:page]).per(10)
     render :index
+
   end
 
   def show
