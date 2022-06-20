@@ -1,0 +1,505 @@
+[33mcommit 90c90f81187ac4418155965640b9a655aeebb053[m[33m ([m[1;36mHEAD -> [m[1;32msota.tonegawa[m[33m, [m[1;31morigin/sota.tonegawa[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: 02d4b55 15391ae
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Mon Jun 20 10:52:58 2022 +0900
+
+    Merge pull request #32 from DMM-football-team/install-devise
+    
+    22222
+
+[33mcommit 15391aea00b51fba93f42edf6b7a67e6d156fa1f[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Mon Jun 20 01:51:40 2022 +0000
+
+    22222
+
+[33mcommit 02d4b55859c650bbfbc138ea45bcd9d1b6eef9d0[m
+Merge: 5724509 d91edbb
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Mon Jun 20 10:29:53 2022 +0900
+
+    Merge pull request #31 from DMM-football-team/install-devise
+    
+    Install devise
+
+[33mcommit d91edbb261718f24edd82b9ffe238b9a89f07a13[m
+Merge: 31f0de5 5724509
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Sun Jun 19 19:02:52 2022 +0900
+
+    Merge branch 'develop' into install-devise
+
+[33mcommit 31f0de5182571b2f2e84d8c566cf5e8d31eca2d9[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Sun Jun 19 10:00:13 2022 +0000
+
+    initial commit
+
+[33mcommit 5724509df1c4258ebedd7fe26a3e1774d23fb4bc[m
+Merge: 56c7dec c52ab0e
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Sun Jun 19 16:23:39 2022 +0900
+
+    Merge pull request #30 from DMM-football-team/sota.tonegawa
+    
+    update
+
+[33mcommit c52ab0e0f9da3ab71c0599933c542858cd5aa152[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Sun Jun 19 07:21:19 2022 +0000
+
+    update
+
+[33mcommit f9657accc573abc1c175cf41deccc0988bd722b0[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Sat Jun 18 15:18:13 2022 +0000
+
+    とりあえずのコミット
+
+[33mcommit 56c7decf29438c99c767928f8cfc4f45082ec2d1[m
+Merge: da02856 2bea126
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Sat Jun 18 16:23:05 2022 +0900
+
+    Merge pull request #28 from DMM-football-team/sota.tonegawa
+    
+    pdate
+
+[33mcommit 2bea1263445a2bf6959f0cb10da7948ae66531ed[m
+Merge: da02856 1eecefc
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Sat Jun 18 07:20:57 2022 +0000
+
+    conflict
+
+[33mcommit da02856f529bcc6e6014956ef404ba3140e05ba4[m[33m ([m[1;32mdevelop[m[33m)[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Sat Jun 18 05:20:15 2022 +0000
+
+    update
+
+[33mcommit 4cdb8ed570861e251df873c34617a2f65f697bb9[m
+Merge: babe339 1cd2d80
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Sat Jun 18 12:35:59 2022 +0900
+
+    Merge pull request #27 from DMM-football-team/Kohei
+    
+    商品登録画面１回目
+
+[33mcommit babe339ce54cbe97a62351ac1ef86444124b28ea[m
+Merge: 881e842 a80cc51
+Author: KOHEI FUKUSHIMA <104128017+Kohei-fukushima@users.noreply.github.com>
+Date:   Sat Jun 18 12:34:09 2022 +0900
+
+    Merge pull request #26 from DMM-football-team/install-devise
+    
+    initial commit
+
+[33mcommit a80cc51a2605b92ccbd225090ed380a352a5ec29[m[33m ([m[1;31morigin/install-devise[m[33m)[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Sat Jun 18 03:31:49 2022 +0000
+
+    initial commit
+
+[33mcommit 1cd2d801632882addbf8a901b0948b86ed293f6c[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Sat Jun 18 02:03:04 2022 +0000
+
+    商品登録画面１回目
+
+[33mcommit 1eecefc968e8b0c9665e16bb082c67d61c06bdc0[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Sat Jun 18 01:54:34 2022 +0000
+
+    pdate
+
+[33mcommit 881e842a3d184917a99ff254707e35592405ed04[m
+Merge: a823011 ab0dd22
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Sat Jun 18 10:39:01 2022 +0900
+
+    Merge pull request #24 from DMM-football-team/install-devise
+    
+    管理者商品一覧１回目コミット
+
+[33mcommit ab0dd227a6baec7dd0029658d075aa5a8eaf6446[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 09:53:48 2022 +0000
+
+    管理者商品一覧１回目コミット
+
+[33mcommit a8230114a34942effde4e2594afb848c43f32914[m
+Merge: 27c90b3 9f9c16b
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 17:32:31 2022 +0900
+
+    Merge pull request #23 from DMM-football-team/sota.tonegawa
+    
+    update
+
+[33mcommit 9f9c16bcd0f36f365c535b45d6107fd00cba8b60[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Fri Jun 17 08:31:17 2022 +0000
+
+    update
+
+[33mcommit 27c90b3e647b02baf832f22518d956af69e1fcb5[m
+Merge: 76631a0 ec1741a
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 15:44:41 2022 +0900
+
+    Merge pull request #22 from DMM-football-team/install-devise
+    
+    sss
+
+[33mcommit ec1741a49a8262bfb209827e639f21def6e612de[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 06:42:46 2022 +0000
+
+    sss
+
+[33mcommit 76631a0475aabc555bf83d1d6da33b8c90a7634a[m
+Merge: 7538b6e 6fb5b09
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 15:38:53 2022 +0900
+
+    Merge pull request #21 from DMM-football-team/install-devise
+    
+    aaaa
+
+[33mcommit 6fb5b09c942b348a0dc3a0a33bf43dfe8420c188[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 06:38:01 2022 +0000
+
+    aaaa
+
+[33mcommit 7538b6e336296de45bfa99b01d91c94e46a6daf4[m
+Merge: d14377e 83b0afc
+Author: KOHEI FUKUSHIMA <104128017+Kohei-fukushima@users.noreply.github.com>
+Date:   Fri Jun 17 15:36:22 2022 +0900
+
+    Merge pull request #20 from DMM-football-team/install-devise
+    
+    ルーティング更新
+
+[33mcommit 83b0afca1ffaec6998781bc379fe2dd442940101[m
+Merge: e81aa71 d14377e
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 15:35:34 2022 +0900
+
+    Merge branch 'develop' into install-devise
+
+[33mcommit e81aa71adabc0b113535ae8a5834ab47f2a1f68c[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 06:33:23 2022 +0000
+
+    ルーティング更新
+
+[33mcommit d14377e354b7527172519c9e89e9eeb9c3ab002b[m
+Merge: 2e6cd08 4cda821
+Author: KOHEI FUKUSHIMA <104128017+Kohei-fukushima@users.noreply.github.com>
+Date:   Fri Jun 17 15:31:26 2022 +0900
+
+    Merge pull request #19 from DMM-football-team/sota.tonegawa
+    
+    model_update
+
+[33mcommit 4cda8215dd934246b496d5e7c1dcfab7afef38dc[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Fri Jun 17 06:14:52 2022 +0000
+
+    model_update
+
+[33mcommit 2e6cd0867947e54d038c62e2162664234302cb84[m
+Merge: 1744988 c62d18a
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 15:00:02 2022 +0900
+
+    Merge pull request #18 from DMM-football-team/install-devise
+    
+    めんどくさいのおおおおおお
+
+[33mcommit c62d18a5f427ac78778f5267b4b599995d6988f2[m
+Merge: 610524b 1744988
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 14:59:53 2022 +0900
+
+    Merge branch 'develop' into install-devise
+
+[33mcommit 610524bdb665c859283aa080e6ea5669e0d1af95[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 05:56:11 2022 +0000
+
+    めんどくさいのおおおおおお
+
+[33mcommit 1744988245b645243307b7f8c36f20ac2aca0caa[m
+Merge: 97f3869 fed0233
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 14:51:45 2022 +0900
+
+    Merge pull request #17 from DMM-football-team/Kohei
+    
+    routing
+
+[33mcommit fed02332010a3a21fb114720728cad9cbb6edb79[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Fri Jun 17 05:50:26 2022 +0000
+
+    routing
+
+[33mcommit 97f386921926ebcb0d6fd2ea6ae6805e09ea6152[m
+Merge: 6581c4f df84db9
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 14:39:56 2022 +0900
+
+    Merge pull request #16 from DMM-football-team/Kohei
+    
+    routing
+
+[33mcommit df84db9820da83912e0ee7063241340c0c2e6923[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Fri Jun 17 05:36:03 2022 +0000
+
+    routing
+
+[33mcommit 6581c4fb00960e750fe4362c19b57ef9c5e67a46[m
+Merge: 46ecda9 9451201
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 14:27:21 2022 +0900
+
+    Merge pull request #14 from DMM-football-team/Kohei
+    
+    controller
+
+[33mcommit 9451201bd5a0611d1074994822610656282d9d0a[m
+Merge: 24b91d4 46ecda9
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 14:27:08 2022 +0900
+
+    Merge branch 'develop' into Kohei
+
+[33mcommit 46ecda9fb8ce7be2cd637245dee90b59693cd94d[m
+Merge: eed3993 44b781b
+Author: KOHEI FUKUSHIMA <104128017+Kohei-fukushima@users.noreply.github.com>
+Date:   Fri Jun 17 14:16:28 2022 +0900
+
+    Merge pull request #13 from DMM-football-team/install-devise
+    
+    管理者用コントローラー作成
+
+[33mcommit 24b91d4a841f7215e9f519a4bec9afd5ee38df8c[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Fri Jun 17 05:15:37 2022 +0000
+
+    controller
+
+[33mcommit 44b781bc4596544891a424e2f679d4449afb66cc[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 05:09:14 2022 +0000
+
+    管理者用コントローラー作成
+
+[33mcommit eed39935f8b2191d43b726739f4128953ab39eb1[m
+Merge: 5059cf3 389c210
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Fri Jun 17 12:19:07 2022 +0900
+
+    Merge pull request #12 from DMM-football-team/install-devise
+    
+    Install devise
+
+[33mcommit 389c210b63ae08559fbb06f714d46a9f49123613[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 03:13:30 2022 +0000
+
+    テストですう
+
+[33mcommit f03691b1b594e6a069d762bf0bc4afc003f6e34f[m
+Merge: 3342460 5059cf3
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 02:29:33 2022 +0000
+
+    Merge branch 'develop' of https://github.com/DMM-football-team/Team-development into install-devise
+
+[33mcommit 5059cf30bc9f748672f1415ad2af73eae42814a6[m
+Merge: ef5753b 238c4e9
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 11:28:31 2022 +0900
+
+    Merge pull request #11 from DMM-football-team/sota.tonegawa
+    
+    rails 承認！
+
+[33mcommit 238c4e955e6cf28ecfdf8d97a2a635d4f4015d67[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Fri Jun 17 02:26:47 2022 +0000
+
+    rails
+
+[33mcommit 334246079efb62944b530e30e0752ddc9fe04093[m
+Merge: ef5753b e41016c
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 02:17:01 2022 +0000
+
+    Merge branch 'install-devise' of https://github.com/DMM-football-team/Team-development into install-devise
+
+[33mcommit ef5753bb420c2a169cf058d94dcf7a961dfb5af4[m
+Merge: df341e1 b18e339
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Fri Jun 17 11:09:39 2022 +0900
+
+    Merge pull request #10 from DMM-football-team/Kohei
+    
+    Rails
+
+[33mcommit b18e339fa3479008dcc0be1a964e3cce7e0e9b98[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Fri Jun 17 02:07:47 2022 +0000
+
+    Rails
+
+[33mcommit e41016cc48b79eb3087f4b6d54b0e373e2b45a30[m
+Merge: d9bd2d7 df341e1
+Author: KOHEI FUKUSHIMA <104128017+Kohei-fukushima@users.noreply.github.com>
+Date:   Thu Jun 16 16:34:17 2022 +0900
+
+    Merge pull request #9 from DMM-football-team/develop
+    
+    Develop
+
+[33mcommit df341e1f8bade6b732a6be6a33f80582d681c5a2[m[33m ([m[1;31morigin/F.K[m[33m)[m
+Merge: d9bd2d7 30b3aca
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Thu Jun 16 16:21:48 2022 +0900
+
+    Merge pull request #8 from DMM-football-team/F.K
+    
+    shuusei
+
+[33mcommit 30b3aca0d7d410559ff50386d36154c5e04f909b[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Thu Jun 16 07:19:01 2022 +0000
+
+    name
+
+[33mcommit d9bd2d7300c640e3f8f5c7f31347595333cf0e0c[m
+Merge: 78424b4 aa28566
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Thu Jun 16 15:59:56 2022 +0900
+
+    Merge pull request #7 from DMM-football-team/sota.tonegawa
+    
+    Sota.tonegawa
+
+[33mcommit aa28566175083d139fbae5c7b46f1664b5273922[m
+Merge: 40b41e7 78424b4
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Thu Jun 16 15:59:37 2022 +0900
+
+    Merge branch 'develop' into sota.tonegawa
+
+[33mcommit 78424b46ae17e6a1b21d0aa591b2db41f7fa4424[m
+Merge: d11bb13 d95dcbc
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Thu Jun 16 15:55:41 2022 +0900
+
+    Merge pull request #6 from DMM-football-team/Kohei
+    
+    マージしてみます
+
+[33mcommit 40b41e75e1d7101fe1069ecb304c95ad5d68e14e[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Thu Jun 16 06:53:04 2022 +0000
+
+    update
+
+[33mcommit d95dcbca294146cdd25e9e7c5c5df93cb1497c9f[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Thu Jun 16 06:42:28 2022 +0000
+
+    Name3
+
+[33mcommit ee7f604b901c73a95a62aaa540e4d6d8e7cf8634[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Thu Jun 16 06:39:17 2022 +0000
+
+    name2
+
+[33mcommit 1164c1b5aadf51c9e4c66b329efd97dad40a24fb[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Thu Jun 16 06:37:36 2022 +0000
+
+    name
+
+[33mcommit 10c6087f2328bb76e17fdd179c0d7525a9eb80d2[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Thu Jun 16 06:34:13 2022 +0000
+
+    update
+
+[33mcommit 639e2328b55f95b0e3a76f178af47b8811cf5b5b[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Thu Jun 16 06:34:11 2022 +0000
+
+    NName
+
+[33mcommit ee53ea8e3dc14e87d96aae2e7387e44a875d12c0[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Thu Jun 16 06:31:53 2022 +0000
+
+    Name
+
+[33mcommit 4bbdcea5dd9e29ba0d831c63095542af31346308[m
+Author: EC2 Default User <ec2-user@ip-172-31-94-226.ec2.internal>
+Date:   Thu Jun 16 06:25:25 2022 +0000
+
+    test
+
+[33mcommit afc5fb4e041c148a475a072f30abf72867987402[m
+Author: KOHEI FUKUSHIMA <pecpec1129@gmail.com>
+Date:   Thu Jun 16 06:21:48 2022 +0000
+
+    name
+
+[33mcommit d11bb13b4c87d20d1afb599c840889f098e6b341[m[33m ([m[1;32mdvelop[m[33m)[m
+Merge: 1a74278 b58fb77
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Thu Jun 16 15:04:59 2022 +0900
+
+    Merge pull request #2 from DMM-football-team/install-devise
+    
+    pullreq test
+
+[33mcommit b58fb771c3f12776ef98c6b03592d79a19f81c85[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Thu Jun 16 06:00:42 2022 +0000
+
+    pullreq test
+
+[33mcommit 1a742780eacf4abcba279de5d6c7d291a8c0c424[m
+Merge: 613bdaf 3f934e0
+Author: tonesou <104493799+tonesou@users.noreply.github.com>
+Date:   Thu Jun 16 14:51:22 2022 +0900
+
+    Merge pull request #1 from DMM-football-team/install-devise
+    
+    Add devise
+
+[33mcommit 3f934e06e2e58309396cc386f21efa37b0c67222[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Thu Jun 16 05:35:25 2022 +0000
+
+    Add devise
+
+[33mcommit 613bdaf2aef2088c0411d9025a095ffcc02258d9[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Wed Jun 15 08:47:01 2022 +0000
+
+    first commit
+
+[33mcommit 96defcb6b5c2ebc89e9e3e172b4307267f71a6df[m[33m ([m[1;32mmain[m[33m)[m
+Author: tanayuuuuu <101308377+tanayuuuuu@users.noreply.github.com>
+Date:   Wed Jun 15 08:39:09 2022 +0000
+
+    first commit
