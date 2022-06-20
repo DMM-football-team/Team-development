@@ -1,0 +1,30 @@
+<div class="container">
+<h2>管理者ログイン</h2><br/>
+
+  <%= form_with model: @admin, url: admin_session_path, local: true do |f| %>
+
+    <div class="row">
+      <label class="col-lg-3">メールアドレス</label>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "sample@example.com", size:"50" %>
+    </div><br/>
+
+    <div class="row">
+      <label class="col-lg-3">パスワード</label>
+      <%= f.password_field :password, autocomplete: "current-password", size:"50" %>
+    </div><br/>
+
+    <div class="actions">
+      <%= f.submit "ログイン", class:"btn btn-primary" %>
+    </div><br/>
+    <% end %>
+
+    <h5>登録が済んでいない方は</h5>
+    <div class="row">
+      <div class="col-lg-4">
+        <%= link_to "こちら", new_admin_registration_path %>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
