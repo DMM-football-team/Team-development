@@ -19,7 +19,7 @@ Rails.application.routes.draw do
         resources :order_details, only: [:new]
    end
       resources :cart_items, expect: [:new, :show, :edit]
-      resources :shipping_addresses, expect: [:new, :show]
+      resources :shipping_addresses, expect: [:show]
    end
     resources :order_details, only: [:new]
     resources :items, only: [:index, :show]
