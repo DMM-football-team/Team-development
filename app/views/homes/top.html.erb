@@ -5,7 +5,7 @@
         </div>
 
         <div class="col-md-9 col-md-offset-1">
-            <h5>ようこそながのCAKEへ<br/>
+            <h5>ようこそ ながのCAKEへ<br/>
             このサイトは、ケーキ販売のECサイトになります。<br>
             会員でない方も商品の閲覧はできますが、<br>
             購入には会員登録が必要になります。<br>
@@ -15,7 +15,7 @@
             <!--商品を5つ表示-->
             <div class="col-xs-9 col-xs-offset-1">
 　　　　　      <div class="item-content">
-　　　　　      <%= @item.last(5).each do |item| %>
+　　　　　      <% @item.last(5).each do |item| %>
 　　　　　          <div class="col-md-3" style:"padding-right: 0xp; padding-left: 0xp;">
                         <%= link_to item_path(item.id), style: "color: black;", data: {"turbolinks" => false} do %>
                             <%= attachment_image_tag item, :image, :fill, 180, 125, format: 'jpeg',fallback: "no_image.jpg" %><br/>
