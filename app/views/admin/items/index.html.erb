@@ -1,8 +1,6 @@
-
 <div class="container">
  <div class="row">
   <h1>商品一覧</h1>
-
   <table class="table">
    <thred>
     <tr>
@@ -15,17 +13,18 @@
    </thred>
 
    <tbody>
-    <%= @items.each do |item| %>
+    <% @items.each do |item| %>
     <tr>
-     <td><%= link_to item.name, admin_item_path(item.id) %></td>
-     <td><%= item.price %></td>
-     <td><%= item.genre_id %></td>
-     <td><%= if item.is_sales_status == false %>
-     販売中
-     <% else %>
+     <th><%= item.id %></th>
+     <th><%= link_to item.name, admin_item_path(item) %></th>
+     <th><%= item.price %></th>
+     <th><%= item.genre.name %></th>
+     <th><% if item.is_sales_status == false %>
      販売停止中
+     <% else %>
+     販売中
      <% end %>
-     </td>
+     </th>
     </tr>
     <% end %>
    </tbody>

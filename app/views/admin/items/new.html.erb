@@ -1,6 +1,12 @@
-<h1>商品新規登録</h1>
+<h2>商品新規登録</h2>
 <%= form_with model: [:admin, @item] do |f| %>
-    <div class="form_group">
+    <div class="col-xs-5">
+        <div class="field">
+            <%= f.label :image,"商品画像", class:"col-sm-2 col-form-label" %>
+            <%= f.file_field :image, accept: "image/*" %>
+        </div>
+    </div>
+    <div class="col-xs-5">
         <%= f.label :name,"商品名",class:"col-sm-2 col-form-label" %>
         <div class="col-sm-7">
         <%= f.text_field :name, class:"form-control" %>
@@ -30,9 +36,9 @@
               <%= f.select :is_active, [['販売中', true], ['販売停止', false]], prompt: "--選択してください--" %>
           </div>
      </div>
-    <div class="form_group">
+    <div class="actions row">
         <div class="col-sm-7">
-          <%= f.submit '投稿', class: "btn btn-lg  btn btn-outline-primary mt-5 " %>
+          <%= f.submit '新規登録', class: "btn btn-lg  btn btn-outline-primary mt-5 " %>
         </div>
     </div>
 
