@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   }
 
   root to: "homes#top"
+  get 'mypage' => "customers#show"
   get "home/about" => "homes#about"
   get 'orders/log'
   get 'orders/complete'
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
   get 'customers/quit'
   get 'customers/out'
 
-   resources :customers, expect: [:new, :create, :destroy, :index] do
+   resources :customers, only: [:update, :edit] do
       resources :orders, expect: [:destroy, :update, :edit] do
         resources :order_details, only: [:new]
    end
@@ -23,7 +24,6 @@ Rails.application.routes.draw do
    end
     resources :order_details, only: [:new]
     resources :items, only: [:index, :show]
-    resources :customers, expect: [:new, :create, :destroy, :index]
 
   devise_for :admins, controllers: {
   sessions:      'admins/sessions',
