@@ -5,6 +5,8 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @item = Item.find(params[:id])
+    @genres = Genre.find(params[:id])
   end
 
   private
