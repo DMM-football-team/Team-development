@@ -24,6 +24,7 @@ Rails.application.routes.draw do
    end
     resources :order_details, only: [:new]
     resources :items, only: [:index, :show]
+    resources :genres, only: [:show]
 
   devise_for :admins, controllers: {
   sessions:      'admins/sessions',
