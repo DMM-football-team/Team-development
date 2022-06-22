@@ -1,7 +1,9 @@
 <h2 class="head-line text-center title_h2">マイページ</h2>
-		<p><strong class="information-link"><i class="far fa-user"></i>登録情報</strong>
+		
+		<div class="text-center">
+			<p><strong class="information-link"><i class="far fa-user"></i>登録情報</strong>
 		<%= link_to " 編集する", edit_customer_path(@customer.id), class: "glyphicon glyphicon-pencil btn btn-success" %>
-		</p>
+		</p></div>
 
 		<table class="table table-bordered">
 					<tr>
@@ -30,7 +32,7 @@
 					</tr>
 			</table>
 
-			<div class="mypage-bottoms">
+			<div class="text-center">
 				<P><strong class="shipping-link">配送先</strong>
 					<%= link_to " 一覧を見る", customer_shipping_addresses_path(current_customer), class: "glyphicon glyphicon-folder-open btn btn-info" %>
 				</p>
