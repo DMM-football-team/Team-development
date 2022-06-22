@@ -1,28 +1,13 @@
-<div class= "customer-header">
-    <div class= "customer-nav-bars">
-        <nav class="nav navbar-brand navbar-left header-logo">
-            <%= link_to "Logo", root_path, class:"header-logo-letter" %>
-        </nav>
-        <nav class="nav navbar-nav">
-            <span class="adjust"></span>
-        </nav>
-        <nav>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <%= link_to "マイページ", mypage_path %>
-                </li>
-                <li>
-                    <%= link_to "商品一覧", items_path %>
-                </li>
 
-                <li>
-                    <%= link_to "カート", customer_cart_items_path(current_customer) %>
-                </li>
-
-                <li>
-                    <%= link_to "ログアウト", destroy_customer_session_path, method: :delete %>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+    <li class="nav-item">
+        <%= link_to "マイページ", mypage_path, class: 'nav-link text-dark' %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "商品一覧", items_path, class: 'nav-link text-dark' %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "カート", customer_cart_items_path(current_customer), class: 'nav-link text-dark' %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "ログアウト", destroy_customer_session_path, method: :delete, class: 'nav-link text-dark' %>
+    </li>
