@@ -25,6 +25,6 @@ class Admin::ItemsController < ApplicationController
     @item.update(item_params)
   end
   def item_params
-    params.require(:item).permit(:name, :explanation, :image, :genre_id, :price, :is_enabled)
+    params.require(:item).permit(:name, :explanation, :image, :genre_id, :price, :is_sales_status)
   end
 end
