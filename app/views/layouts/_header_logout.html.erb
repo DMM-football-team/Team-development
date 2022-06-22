@@ -1,32 +1,13 @@
-<div class= "logout-header">
-    <div class= "logout-nav-bars">
-        <nav class="nav navbar-brand navbar-left header-logo">
-            <%= link_to root_path, class:"header-logo-letter" do %>
-            <h1>ながのCAKE</h1>
-            <% end %>
-        </nav>
-            <ul class="navbar-nav ml-auto">
-                <li>
-                    <%= link_to home_about_path, class: "nav-link" do %>
-                    About
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to items_path, class: "nav-link" do %>
-                    商品一覧
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to new_customer_registration_path, class: "nav-link" do %>
-                    新規登録
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to new_customer_session_path, class: "nav-link" do %>
-                    ログイン
-                    <% end %>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+
+    <li class="nav-item">
+        <%= link_to "About", home_about_path, class: 'nav-link text-dark' %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "商品一覧", items_path, class: 'nav-link text-dark' %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "新規登録", new_customer_registration_path, class: 'nav-link text-dark' %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "ログイン", new_customer_session_path, class: 'nav-link text-dark' %>
+    </li>
