@@ -1,7 +1,15 @@
 class ItemsController < ApplicationController
   def index
+    @genres = Genre.all
+    @items = Item.all
   end
 
   def show
   end
+
+  private
+	def item_params
+		parmas.require(:item).permit(:image ,:name, :explanation, :price, :is_sales_status, :genre_id, :image)
+	end
+
 end
