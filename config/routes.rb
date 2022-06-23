@@ -19,9 +19,9 @@ Rails.application.routes.draw do
       resources :orders, expect: [:destroy, :update, :edit] do
         resources :order_details, only: [:new]
    end
-      resources :cart_items, expect: [:new, :show, :edit]
       resources :shipping_addresses, expect: [:show]
    end
+    resources :cart_items, expect: [:new, :show, :edit]
     resources :order_details, only: [:new]
     resources :items, only: [:index, :show]
     resources :genres, only: [:show]
