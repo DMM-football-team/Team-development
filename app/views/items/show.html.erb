@@ -3,21 +3,15 @@
         <div class="col-md-2">
             <%= render "sidebar/sidebar", genres: @genres %>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <%= image_tag @item.image, size:"200" %>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8">
             <div class="table">
                 <tbody>
                     <tr>
                         <td><%= @item.name %></td><br/>
                         <td><%= @item.explanation %></td><br/>
                         <td>￥<%= (@item.price).floor %>（税込み）</td>
-                        <td><%= form_with model: @cart_items do |f| %></td>
+                        <td><%= form_with model: @cart_item, url: cart_items_path, local: true do |f| %></td>
                         <td><%= f.select :amount, [['1個', 1], ['2個', 2], ['3個', 3], ['4個', 4], ['5個', 5], ['6個', 6], ['7個', 7], ['8個', 8], ['9個', 9]], include_blank: true, placeholder: "個数選択" %>
                                 <%= f.hidden_field :item_id, :value => @item.id %>
                                 <%= f.submit "カートに入れる" , class: "btn btn-info" %></td>
