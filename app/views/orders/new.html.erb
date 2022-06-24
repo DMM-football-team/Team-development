@@ -1,2 +1,48 @@
-<h1>Orders#new</h1>
-<p>Find me in app/views/orders/new.html.erb</p>
+<div class="container">
+    <div class="row">
+        <div class="offset-1">
+            <h2 class="black-border px-5">注文情報入力</h2>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="offset-2 col-5">
+
+            <div class="row">
+                <strong class="black-border px-5">お支払方法</strong>
+            </div>
+
+            <%= form_with model: @orders, local: true do |f| %>
+            <div class="form-check mt-3">
+                <%= f.radio_button :payment_method, Order.payment_methods.key(0) %>
+                <%= f.label :クレジットカード, Order.payment_methods_i18n[:credit_card] %>
+
+                <%= f.radio_button :payment_method, Order.payment_methods.key(1) %>
+                <%= f.label :銀行振込, Order.payment_methods_i18n[:transfer] %>
+            <% end %>
+            </div>
+
+            <div class="row mt-3">
+              <strong class="red-border px-3">お届け先</strong>
+            </div>
+
+            <%= form_with model: @shipping_addresses, local: true do |f| %>
+            <div class="form-check mt-3">
+                <%= f.radio_button :address, checked: "checked" %>
+                <%= f.label :ご自身の住所 %>
+               〒<%= current_customer.post_code %>&emsp;<%=current_customer.address %><br/>
+                <%= current_customer.last_name + current_customer.first_name %><br/>
+            </div>
+
+            <div class="form-check mt-3">
+                <%= f.radio_button :address, checked: "checked" %>
+                <%= f.select :address_id, options_from_collection_for_select(ShippingAddress.all, :id, :address_display) %>
+           </div>
+
+            <% end %>
+<!--プロパティはカラムと一緒？-->
+<!--お届け先の住所はordersかshipping_addressesか？-->
+        </div>
+    </div>
+
+</div>
