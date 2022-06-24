@@ -3,4 +3,8 @@ class ShippingAddress < ApplicationRecord
 
   validates :customer_id, :name, :address, presence: true
 	validates :post_code, length: {is: 7}, numericality: { only_integer: true }
+
+		def  address_display
+		 '〒' + post_code + ' ' + address + ' ' + last_name + ' ' + first_name
+	 end
 end
