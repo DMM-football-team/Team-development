@@ -1,4 +1,6 @@
 class Admin::ItemsController < ApplicationController
+  before_action :authenticate_admin!
+
   def new
     @item = Item.new
   end
@@ -24,6 +26,7 @@ class Admin::ItemsController < ApplicationController
   def update
     @item = Item.find(params[:id])
     @item.update(item_params)
+    redirect_to admin_items_path
   end
   def item_params
     params.require(:item).permit(:name, :explanation, :image, :genre_id, :price, :is_sales_status)
