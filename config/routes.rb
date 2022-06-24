@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'cart_items/all_destroy'
   get 'customers/quit'
   get 'customers/out'
+  delete '/cart_items/all_destroy' => 'cart_items#all_destroy'
 
    resources :customers, only: [:update, :edit] do
       resources :orders, expect: [:destroy, :update, :edit] do
