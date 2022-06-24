@@ -1,4 +1,8 @@
 class CartItemsController < ApplicationController
+  
+  before_action :set_cart_item, only: [:update, :destroy]
+  before_action :authenticate_customer!
+
   def index
     @cart_items = current_customer.cart_items.all
     @total = @cart_items.inject(0) { |sum, item| sum + item.sum_of_price }
