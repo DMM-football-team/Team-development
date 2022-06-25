@@ -25,8 +25,9 @@
 	          <%= order.order_details.count %>
 	        </td>
 	        <td>
-	      	  <%= order.order_status %>
+	      	  <%= order.status %>
  	        </td>
+ 	        <td><%= link_to "注文詳細", admin_order_path(order), class:"btn btn-primary" %></td>
  	      </tr>
 	    <% end %>
 	  </tbody>
