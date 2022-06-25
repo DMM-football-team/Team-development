@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root to: "homes#top"
   get 'mypage' => "customers#show"
   get "home/about" => "homes#about"
-  get 'orders/log'
+  post 'orders/log'
   get 'orders/complete'
   get 'cart_items/all_destroy'
   get 'customers/quit'

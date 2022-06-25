@@ -5,6 +5,6 @@ class ShippingAddress < ApplicationRecord
 	validates :post_code, length: {is: 7}, numericality: { only_integer: true }
 
 		def  address_display
-		 '〒' + post_code + ' ' + address + ' ' + last_name + ' ' + first_name
+		 '〒' + post_code + ' ' + address + ' ' + name
 	 end
 end
