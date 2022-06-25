@@ -4,6 +4,8 @@ class OrdersController < ApplicationController
   end
 
   def log
+      @orders = current_customer.orders
+      @cart_items = current_customer.cart_items.all
   end
 
   def create
@@ -27,4 +29,5 @@ class OrdersController < ApplicationController
   def order_params
     params.require(:order).permit(:address, :post_code, :name)
   end
-end
+
+ end
