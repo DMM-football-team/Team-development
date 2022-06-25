@@ -4,8 +4,10 @@ class OrdersController < ApplicationController
   end
 
   def log
+      @order = Order.new(order_params)
       @orders = current_customer.orders
       @cart_items = current_customer.cart_items.all
+      @total_price = @cart_items.inject(0) {|sum, item| sum + item.sum_of_price }
   end
 
   def create
@@ -27,7 +29,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:address, :post_code, :name)
+    params.require(:order).permit(:address, :post_code, :name, :payment_method)
   end
 
  end
