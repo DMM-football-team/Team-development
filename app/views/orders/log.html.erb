@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-7">
             <table class="order-info border-red-px3">
                 <thead>
                     <tr>
@@ -10,7 +10,6 @@
                         <th>小計</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <% @cart_items.each do |cart_item| %>
                     <tr class="black-border">
@@ -24,8 +23,35 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-md-2">
-
+        <div class="col-md-5">
+            <table class="order-info border-red-px3">
+                <tbody>
+                    <tr class="black-border">
+                        <td>送料</td>
+                        <td>800</td>
+                    </tr>
+                    <tr class="black-border">
+                        <td>商品合計</td>
+                        <td><%= @total_price %></td>
+                    </tr>
+                     <tr class="black-border">
+                        <td>請求金額</td>
+                        <td><%= @total_price + 800 %></td>
+                    </tr>
+            </table>
         </div>
+        <div class="row-mt5">
+            <div class="col-md-6 offset-2">
+                <strong class="red-border px-3">お支払方法</strong>
+                <td><%= session[:payment_method].to_s%></td>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <strong class="red-border px-3">お届け先</strong>
+                <%= @order.post_code %>
+                <%= @order.address %>
+                <%= @order.name %>
+        </div>
+        <%= link_to "注文を確定する", orders_complete_path %>
     </div>
 </div>

@@ -4,15 +4,33 @@ class OrdersController < ApplicationController
   end
 
   def log
-      @orders = current_customer.orders
+      @order = Order.new(order_params)
+      select_number = params[:order][:address_option].to_i
+      if select_number == 1
+         @order.post_code = current_customer.post_code
+          @order.address = current_customer.address
+           @order.name = current_customer.last_name
+           @order.name = current_customer.first_name
+
+      elsif select_number == 2
+          address = ShippingAddress.find(params[:order][:address_id])
+          @order.post_code = address.post_code
+          @order.address = address.address
+          @order.name = address.name
+
+      elsif select_number == 3
+       else
+           redirect_to new_customer_order_path(current_customer)
+       end
+
       @cart_items = current_customer.cart_items.all
+      @total_price = @cart_items.inject(0) {|sum, item| sum + item.sum_of_price }
   end
 
   def create
     @orders = Order.new(order_params)
     @order.current_customer = current_customer.id
     @order.save
-    redirect_to orders_log_path
   end
 
   def complete
@@ -27,7 +45,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:address, :post_code, :name)
+    params.require(:order).permit(:address, :post_code, :name, :payment_method)
   end
 
  end
