@@ -3,33 +3,32 @@
         <div class="col-md-3">
     	   <%= render "sidebar/sidebar", genres: @genres %>
 	    </div>
-	<div class="col-md-8 offset-md-1">
-	    <div class="col-md-5">
-	       <ようこそ ながのCAKEへ<br/>
+	    <div class="col-md-9">
+	       <div class="d-flex flex-row m-5 p-5">
+	       <ようこそ ながのCAKEへ><br/>
             このサイトは、ケーキ販売のECサイトになります。<br>
             会員でない方も商品の閲覧はできますが、<br>
             購入には会員登録が必要になります。<br>
-	    </div>
-
-	    <div class="album py-5 pg-light">
-	        <div class="d-flex justify-content-center">
-	            <% @item.last(4).each do |item| %>
-
-	            <div class="col-md-2">
-	                <%= link_to item_path(item.id) do %>
-	                <%= image_tag item.image, size:"100x100" %>
-	                <div class="body">
-	                    <%= item.name %>
-	                    ¥<%= item.price %>
-	                <% end %>
-	                </div>
-	            </div>
-	            <% end %>
-	            <div class="d-flex justify-content-center col-md-10 mt-5">
-	            <%= link_to "もっと見る", items_path %>
-	            </div>
 	        </div>
-	    </div>
+        <div class="col-md-9">
+				<h4 class="my-3">商品一覧</h4>
+	    <div class="row">
+	    	<% @item.last(4).each do |item| %>
+	        <div class="d-flex justify-content-center shadow-sm">
+            <%= link_to item_path(item.id) do %>
+				<img class="card-img-top"><%= image_tag item.image, size: "100x100" %></img>
+				<div class="card-body">
+					<%= item.name %>
+				<% end %>
+					<p class="card-text">¥<%= (item.price).floor %></p>
+				</div>
+			</div>
+			<% end %>
+			<div class="d-flex justify-content-end col-md-10 mt-5">
+	            <%= link_to "もっと見る", items_path %>
+	        </div>
+		</div>
+		</div>
 	</div>
     </div>
 </div>
