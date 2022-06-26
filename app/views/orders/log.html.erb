@@ -40,11 +40,18 @@
                     </tr>
             </table>
         </div>
-        <div class="row">
+        <div class="row-mt5">
             <div class="col-md-6 offset-2">
                 <strong class="red-border px-3">お支払方法</strong>
-                
+                <td><%= session[:payment_method].to_s%></td>
             </div>
         </div>
+        <div class="row mt-2">
+            <strong class="red-border px-3">お届け先</strong>
+                <%= @order.post_code %>
+                <%= @order.address %>
+                <%= @order.name %>
+        </div>
+        <%= link_to "注文を確定する", orders_complete_path %>
     </div>
 </div>
