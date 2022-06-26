@@ -14,12 +14,10 @@
 	    <% @orders.each do |order| %>
 	      <tr>
 	        <td>
-	          <%= link_to admin_order_path(order), data: {"turbolinks" => false}, :style=>"color:#528fff;"  do %>
-	          	<%= order.created_at %>
-	          <% end %>
+	          <%= order.created_at %>
 	        </td>
 	        <td>
-	          <%= full_name(order.customer) %>
+	          <%#= full_name(order.customer) %>
 	        </td>
 	        <td>
 	          <%= order.order_details.count %>
