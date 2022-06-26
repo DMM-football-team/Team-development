@@ -1,21 +1,26 @@
-<%= render "sidebar/sidebar", genres: @genres %>
-<div class = "text-center">
-    <h2 class="product-headlinehead-line title_h2 text-center"><%= @genre.name %>一覧</h2>
-	<span>
-	 (全<%= @items.count %>件)
-	</span>
-	<div class="clearfix product-box">
-	  <div class="text-center">
-		<% @items.each do |item| %>
-		<div class="text-center">
-	      <%= link_to item_path(item.id) do %>
-	      <%= image_tag item.image, size: "200" %>
-	      <% end %>
-	      <p><%= item.name %></p>
-	      <p>¥<%= (item.price).floor %></p>
-	    </div>
-	    <% end %>
-	    <%= link_to "戻る", items_path %>
-			</div>
-		</div>
+<div class="row">
+	<div class="col-md-3">
+		<%= render "sidebar/sidebar", genres: @genres %>
 	</div>
+
+	<div class="col-md-9">
+		<div class="my-3 text-center">
+			<h4><%= @genre.name %>一覧</h4>
+			<span>(全<%= @items.count %>件)</span>
+		</div>
+		<div class="clearfix product-box">
+	    <div class="text-center">
+			<% @items.each do |item| %>
+			<div class="text-center">
+		      <%= link_to item_path(item.id) do %>
+		      <%= image_tag item.image, size: "200" %>
+		      <% end %>
+		      <p><%= item.name %></p>
+		      <p>¥<%= (item.price).floor %></p>
+		    </div>
+		    <% end %>
+		    <%= link_to "戻る", items_path %>
+		</div>
+	    </div>
+	</div>
+</div>
