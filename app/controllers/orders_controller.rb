@@ -29,7 +29,7 @@ class OrdersController < ApplicationController
 
   def create
     @orders = Order.new(order_params)
-    @order.current_customer = current_customer.id
+    @order.customer_id = current_customer.id
     @order.save
   end
 
