@@ -1,2 +1,43 @@
-<h1>Orders#index</h1>
-<p>Find me in app/views/orders/index.html.erb</p>
+<div class="container">
+  <h2>注文履歴一覧</h2>
+
+  <table class="table mx-auto">
+
+    <thead>
+      <tr>
+        <th scope="col">注文日</th>
+        <th scope="col">配送先</th>
+        <th scope="col">注文商品</th>
+        <th scope="col">支払い金額</th>
+        <th scope="col">注文ステータス</th>
+        <th scope="col">注文詳細一覧</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @orders.each do |order| %>
+      <tr>
+        <td><%= order.created_at.strftime("%Y年%m月%d日") %></td>
+        <td>〒
+        　<%= order.post_code %>
+          <%= order.address %>
+          <%= order.name %>
+        </td>
+        <td>
+           <% order.order_details.each do |detail| %>
+	         <%= detail.item.name %>
+	       <% end %>
+        </td>
+        <td>
+            <%= order.order_details.sum(:price) %>
+        </td>
+        <td>
+            <%= order.status %>
+        </td>
+        <td>
+            <%= link_to "表示する",customer_order_path(current_customer, order.id), class: "btn btn-primary "%>
+        </td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
