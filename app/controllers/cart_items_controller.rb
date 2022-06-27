@@ -1,6 +1,6 @@
 class CartItemsController < ApplicationController
 
-  before_action :set_cart_item, only: [:update]
+  # before_action :set_cart_item, only: [:update]
   before_action :authenticate_customer!
 
   def index
