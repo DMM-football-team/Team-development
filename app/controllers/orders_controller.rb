@@ -47,9 +47,16 @@ class OrdersController < ApplicationController
   end
 
   def index
+      @orders = Order.all
   end
 
   def show
+    @order = Order.find(params[:id])
+    @order_details = @order.order_details.all
+    @total = 0
+    @order_details.each do |order_detail|
+      @total += (order_detail.price)*(order_detail.amount)
+    end  
   end
 
   private
