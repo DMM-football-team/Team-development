@@ -7,6 +7,10 @@ class CustomersController < ApplicationController
   end
 
   def out
+    @customer = current_customer
+     @customer.update(is_deleted: true)
+     reset_session
+     redirect_to root_path
   end
 
   def edit
@@ -22,7 +26,7 @@ class CustomersController < ApplicationController
       render :edit
     end
   end
-  
+
   private
    def customer_params
      params.require(:customer).permit(:address, :first_name, :last_name , :last_name_kana, :first_name_kana, :post_code, :phone_number, :email)
